@@ -96,9 +96,7 @@
       font-weight: 600;
       font-size: 20px;
       color: #0d6efd;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      text-decoration-thickness: 2px
+
     }
 
     .menu {
