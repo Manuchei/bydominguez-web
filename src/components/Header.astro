@@ -1,0 +1,50 @@
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#inicio" class="brand">
+        <img src="/logo_con_fondo.png" alt="byDominguez" class="logo-img">
+        <span class="logo-text">byDominguez</span>
+      </a>
+
+      <div class="menu" role="navigation" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="#contacto">Pedir presupuesto</a>
+      </div>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menú"
+        aria-controls="mobileNav"
+        aria-expanded="false"
+      >
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Overlay + menú móvil -->
+  <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true"></div>
+
+  <nav id="mobileNav" class="mobile-nav" aria-label="Menú móvil" aria-hidden="true">
+    <div class="mobile-head">
+      <a href="#inicio" class="mobile-brand" aria-label="Inicio">
+        <img src="/logo_con_fondo.png" alt="" class="mobile-logo">
+        <span>byDominguez</span>
+      </a>
+      <button type="button" class="menu-close" id="menuClose" aria-label="Cerrar">✕</button>
+    </div>
+
+    <a href="#servicios">Servicios</a>
+    <a href="#stack">Stack</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn full" href="#contacto">Pedir presupuesto</a>
+  </nav>
+</header>

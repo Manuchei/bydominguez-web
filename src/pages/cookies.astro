@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Política de cookies · byDominguez</title>
+
+  <style>
+    :root {
+      --azul:#1e3a8a; --azul-2:#0ea5e9;
+      --bg:#0f172a; --card:#111827; --white:#fff;
+    }
+
+    html { scroll-behavior:smooth }
+    body {
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#0b1020 60%,#080c19);
+      color:var(--white);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
+    }
+
+    .wrap { max-width:1160px; margin:0 auto; padding:0 20px }
+
+    /* Header */
+    header {
+      position:sticky; top:0; z-index:50;
+      background:rgba(8,12,25,.7);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+    .logo-img { height:40px; vertical-align:middle }
+    .logo-text {
+      margin-left:8px; font-weight:700; font-size:18px;
+      color:#0ea5e9;
+      text-decoration:underline;
+      text-underline-offset:4px;
+      text-decoration-thickness:2px;
+    }
+    .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--white) }
+
+    /* Hero */
+    .hero { padding:56px 0 26px }
+    h1 { font-size:36px; line-height:1.15; margin:.2em 0 }
+    .sub { color:#cbd5e1; margin-top:6px }
+
+    /* Card */
+    .card {
+      background:rgba(17,24,39,.7);
+      border:1px solid rgba(255,255,255,.06);
+      padding:22px; border-radius:16px;
+    }
+    .card h2 { margin:8px 0 10px }
+    .card p, .card li { color:#e5e7eb }
+
+    /* Footer */
+    footer {
+      padding:36px 0; color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,.06);
+      margin-top:36px;
+    }
+    .footer-flex {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; flex-wrap:wrap;
+    }
+    .footer-center { display:flex; align-items:center; gap:12px }
+    .footer-center a { color:#cbd5e1; text-decoration:none; font-weight:600 }
+    .footer-center a:hover { text-decoration:underline }
+    .dot { color:#475569; opacity:.8 }
+
+    @media (max-width:700px){
+      .footer-flex { justify-content:center; text-align:center }
+      .footer-center { order:-1; margin-bottom:6px }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="index.html#inicio" class="brand">
+          <img src="logo_con_fondo.png" alt="byDominguez" class="logo-img">
+          <span class="logo-text">byDominguez</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Política de cookies</h1>
+      <p class="sub">Información sobre el uso de cookies en esta web.</p>
+    </section>
+
+    <section class="card">
+      <h2>¿Qué son las cookies?</h2>
+      <p>Son pequeños archivos que se guardan en tu dispositivo para recordar información de tu visita y mejorar tu experiencia.</p>
+
+      <h2>Tipos de cookies que usamos</h2>
+      <ul>
+        <li><strong>Técnicas (necesarias):</strong> imprescindibles para el funcionamiento del sitio.</li>
+        <li><strong>Analíticas (opcionales):</strong> nos ayudan a mejorar el sitio de forma anónima (solo se cargan si aceptas).</li>
+      </ul>
+
+      <h2>Cómo gestionar las cookies</h2>
+      <p>Puedes permitir, bloquear o eliminar las cookies desde la configuración de tu navegador. Si deshabilitas algunas, es posible que ciertas funciones no estén disponibles.</p>
+
+      <h2>Consentimiento</h2>
+      <p>Las cookies analíticas solo se activarán si las aceptas expresamente en el banner de cookies.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-flex">
+      <small>© <span id="y"></span> Manuel Domínguez · Vigo</small>
+      <nav class="footer-center" aria-label="Enlaces legales">
+        <a href="aviso_legal.html">Aviso legal</a><span class="dot">·</span>
+        <a href="privacidad.html">Política de privacidad</a><span class="dot">·</span>
+        <a href="cookies.html">Política de cookies</a>
+      </nav>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/mddmanuel8/">LinkedIn</a> ·
+        <a href="https://github.com/Manuchei">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script> -->
+</body>
+</html>

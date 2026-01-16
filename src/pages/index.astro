@@ -1,0 +1,275 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<BaseLayout>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="#inicio" class="brand">
+          <img src="/logo_con_fondo.png" alt="byDominguez" class="logo-img">
+          <span class="logo-text">byDominguez</span>
+        </a>
+
+        <div class="menu" role="navigation" aria-label="Principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#stack">Stack</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#contacto">Contacto</a>
+          <a class="btn" href="#contacto">Pedir presupuesto</a>
+        </div>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mobileNav"
+          aria-expanded="false"><span class="bar"></span></button>
+      </nav>
+    </div>
+
+    <div id="mobileOverlay" class="mobile-overlay" aria-hidden="true"></div>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Menú móvil" aria-hidden="true">
+      <div class="mobile-head">
+        <a href="#inicio" class="mobile-brand" aria-label="Inicio">
+          <img src="/logo_con_fondo.png" alt="" class="mobile-logo">
+          <span>byDominguez</span>
+        </a>
+        <button type="button" class="menu-close" id="menuClose" aria-label="Cerrar">✕</button>
+      </div>
+
+      <a href="#servicios">Servicios</a>
+      <a href="#stack">Stack</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn full" href="#contacto">Pedir presupuesto</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="wrap grid-hero">
+      <div class="reveal">
+        <span class="kicker">Disponible · Remoto o presencial · Vigo</span>
+        <h1 id="typeTitle">Webs con WordPress y apps a medida en Django y Spring Boot. Front en React-Angular</h1>
+        <p class="lead">Desarrollador freelance en Vigo. Creo sitios rápidos y claros, con SEO on-page y buen
+          rendimiento. Experiencia en WordPress/Divi, Python/Django, Java/Spring Boot y front en React/Angular. Trabajo
+          con MySQL/MongoDB, Docker y Git.</p>
+        <div class="badges">
+          <span class="badge">⚡ Rendimiento</span>
+          <span class="badge">🔎 SEO on-page</span>
+          <span class="badge">🧩 Integraciones</span>
+          <span class="badge">🛠️ Soporte continuo</span>
+        </div>
+        <p><a class="btn" href="#contacto">Hablemos de tu proyecto</a></p>
+      </div>
+
+      <aside class="hero-card reveal delay-1" aria-labelledby="stack-title">
+        <h2 id="stack-title" style="margin-top:0">Stack principal</h2>
+        <div class="stack">
+          <span class="chip">Python · Java · JavaScrpit</span>
+          <span class="chip">React · Angular · SpringBoot · Django</span>
+          <span class="chip">MySQL · MongoDB</span>
+          <span class="chip">Git · VS Code · Docker</span>
+          <span class="chip">WordPress · SiteOrigin</span>
+          <span class="chip">GitLab · GitHub</span>
+          <span class="chip">Jitsi · Slack · Gather · SEO · Linux · Divi · Ionos</span>
+          <span class="chip">Plesk · Trello · Jira · Clonfuence · Microsoft Teams</span>
+          <span class="chip">Grafana · Postman Compass</span>
+        </div>
+        <p class="section-sub" style="margin-top:10px">También trabajo con SEO técnico, Plesk/Ionos y despliegues en Linux.</p>
+      </aside>
+    </div>
+  </main>
+
+  <section id="servicios" class="reveal">
+    <div class="wrap">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-sub">Desde la idea hasta la puesta en producción y el soporte.</p>
+
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Web corporativa con WordPress</h3>
+          <p>Diseño y desarrollo webs administrables con Divi, optimizadas para posicionar y convertir.</p>
+          <ul class="list">
+            <li>Diseño responsive y accesible, enfocados a Core Web Vitals.</li>
+            <li>Velocidad (Core Web Vitals)</li>
+            <li>SEO on-page y analítica desde el día uno.</li>
+            <li>Despliegue y mantenimiento en Plesk/Ionos sobre Linux.</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+
+        <article class="card reveal delay-1">
+          <h3>Tienda online (WooCommerce)</h3>
+          <p>E-commerce en WordPress con pagos seguros, catálogo claro y automatizaciones.</p>
+          <ul class="list">
+            <li>Configuración de envíos, impuestos y TPV (Redsys/Stripe).</li>
+            <li>Fichas y filtros avanzados con buen SEO para e-commerce.</li>
+            <li>Soporte en migración/volcado de datos y nuevos métodos de pago.</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+
+        <article class="card reveal delay-2">
+          <h3>App a medida</h3>
+          <p>Backends en Django o Spring Boot con front en React/Angular. API REST, panel de administración y despliegue.</p>
+          <ul class="list">
+            <li>Arquitectura limpia y repositorios Git/GitLab.</li>
+            <li>MySQL/MongoDB y Docker para entornos reproducibles.</li>
+            <li>Despliegue en VPS o cloud con Plesk/Ionos.</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+
+        <article class="card reveal delay-3">
+          <h3>Mantenimiento de equipos</h3>
+          <p>Mantenimiento preventivo y correctivo de PCs/portátiles y puestos de trabajo. Soporte remoto y on-site con gestión proactiva.</p>
+          <ul class="list">
+            <li>Actualizaciones, antivirus y limpieza de sistema.</li>
+            <li>Optimización de rendimiento y resolución de incidencias.</li>
+            <li>Inventario y monitorización básica.</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+
+        <article class="card reveal delay-4">
+          <h3>Instalación de programas de diseño</h3>
+          <p>Instalación, activación y puesta a punto de suites de diseño para dejarlo todo listo y optimizado: SketchUp, AutoCAD/Revit, Adobe (Photoshop/Illustrator), etc.</p>
+          <ul class="list">
+            <li>Licencias y perfiles: activación/migración, presets y bibliotecas.</li>
+            <li>Plugins y motores de render: V-Ray, Enscape, Lumion; materiales y extensiones.</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+
+        <article class="card reveal delay-5">
+          <h3>Reparación y ampliación de hardware</h3>
+          <p>Diagnóstico y puesta a punto de equipos: ampliación de RAM y almacenamiento, sustitución de componentes y mejoras de rendimiento.</p>
+          <ul class="list">
+            <li>RAM: test, compatibilidad y ampliación.</li>
+            <li>Almacenamiento: SSD/NVMe, clonado y migración de sistema</li>
+            <li>Lectores y puertos: tarjetas SD/USB, Wi-Fi/Bluetooth.</li>
+            <li>Limpieza interna y refrigeración (pasta térmica, ventiladores).</li>
+            <li>Portátiles: baterías, teclados y bisagras. Sobremesa: fuente, GPU.</li>
+            <li>Recuperación básica de datos en SD/USB (si es posible).</li>
+          </ul>
+          <p class="price">Presupuesto a medida.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="reveal">
+    <div class="wrap">
+      <h2 class="section-title">Tecnologías</h2>
+      <p class="section-sub">Trabajo a diario con Python, Java y JavaScript; frameworks React, Angular, Django y Spring Boot; bases de datos MySQL y MongoDB; y herramientas Docker y Git. También domino WordPress/Divi para webs rápidas y editables.</p>
+
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Frontend</h3>
+          <p>React, Angular, JavaScript/TypeScript, Divi Builder.</p>
+        </div>
+        <div class="card reveal delay-1">
+          <h3>Backend</h3>
+          <p>Python/Django, Java/Spring Boot, Node.js sencillo.</p>
+        </div>
+        <div class="card reveal delay-2">
+          <h3>Datos & DevOps</h3>
+          <p>MySQL, MongoDB, Docker, Plesk/Ionos, Linux, Git.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="reveal">
+    <div class="wrap">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-sub">Aplicaciones y webs reales: capturas, stack y enlaces.</p>
+
+      <div class="cards projects">
+        <article class="card project-card reveal">
+          <a href="/proyectos/gestion-vacantes" class="project-cover-link" aria-label="Ver proyecto Gestión de Vacantes">
+            <img class="project-cover" src="/img/proyectos/gestion-vacantes/cover.png" alt="Gestión de vacantes (Dev Empleo)">
+          </a>
+
+          <div class="project-body">
+            <h3>Gestión de vacantes (Dev Empleo)</h3>
+            <p>
+              Portal tipo bolsa de empleo con listado filtrable, paginación, detalle de vacante y vacantes destacadas.
+              Frontend en Angular + API REST en Spring Boot.
+            </p>
+
+            <div class="project-tags">
+              <span class="chip">Angular</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">REST API</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn" href="/proyectos/gestion-vacantes">Ver capturas</a>
+              <a class="btn btn-ghost" target="_blank" href="https://github.com/Manuchei">Código</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="reveal">
+    <div class="wrap">
+      <h2 class="section-title">Experiencia</h2>
+      <div class="timeline" aria-label="Línea temporal de experiencia">
+        <div class="tl-item reveal">
+          <h4>Junior Developer · Gyleven</h4>
+          <div class="when">Marzo 2025 – Junio 2025</div>
+          <p>Apps web en Python/Django y control de repositorios GitLab.</p>
+        </div>
+        <div class="tl-item reveal delay-1">
+          <h4>Gestor de páginas web · Inclusión Corporativa</h4>
+          <div class="when">Julio 2024 – Septiembre 2024</div>
+          <p>Creación de webs con Divi, programación en PHP y SEO.</p>
+        </div>
+        <div class="tl-item reveal delay-2">
+          <h4>Programador Web · MMBuxan</h4>
+          <div class="when">Septiembre 2023 – Marzo 2024</div>
+          <p>Tiendas y webs WordPress/Divi, pasarelas de pago y soporte.</p>
+        </div>
+        <div class="tl-item reveal delay-3">
+          <h4>Soporte · Cadenas de Inditex (Qindel Group)</h4>
+          <div class="when">Marzo 2023 – Junio 2023</div>
+          <p>Mejoras de procesos y resolución de incidencias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="reveal">
+    <div class="wrap">
+      <div class="cta">
+        <h2 style="margin-top:0">¿Hablamos?</h2>
+        <p>Cuéntame tu idea y te preparo una propuesta sin compromiso.</p>
+        <p>
+          <a class="btn" href="mailto:contacto@bydominguez.com?subject=Proyecto%20web">contacto@bydominguez.com</a>
+          <span style="display:inline-block;margin:0 10px"></span>
+          <a class="btn" href="tel:+34659127518">+34 659 127 518</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="reveal">
+    <div class="wrap footer-flex">
+      <small>© <span id="y"></span> Manuel Domínguez · Vigo</small>
+      <nav class="footer-center" aria-label="Enlaces legales">
+        <a href="/aviso_legal">Aviso legal</a><span class="dot">·</span>
+        <a href="/privacidad">Política de privacidad</a><span class="dot">·</span>
+        <a href="/cookies">Política de cookies</a>
+      </nav>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/mddmanuel8/">LinkedIn</a> ·
+        <a href="https://github.com/Manuchei">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

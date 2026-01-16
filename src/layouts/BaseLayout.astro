@@ -1,0 +1,66 @@
+---
+const { title = "Manuel Domínguez · Desarrollador Freelance", description = "" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <link rel="icon" href="https://www.bydominguez.com/favicon.ico?v=4" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="/styles/global.css" />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- ✅ CSS global desde /public -->
+  <link rel="stylesheet" href="/styles/global.css" />
+
+  <!-- Cookiebot -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0c076666-c4c1-4f15-b7fb-28fbc4a5c0b8"
+    type="text/javascript" async></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49EEG7F1X7"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-49EEG7F1X7');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KJ75B3DV');
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"byDominguez","url":"https://www.bydominguez.com","logo":"https://www.bydominguez.com/logo_con_fondo.png","sameAs":["https://www.linkedin.com/in/mddmanuel8/","https://github.com/Manuchei"]}
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ75B3DV" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="bg-anim" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"
+    style="position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.22"></canvas>
+
+  <slot />
+
+  <!-- ✅ JS global desde /public (sin bundle) -->
+<script is:inline src="/scripts/site.js"></script>
+</body>
+</html>
