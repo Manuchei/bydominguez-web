@@ -595,3 +595,15 @@
   padding: 22px;
   border-radius: 16px;
 }
+
+.legal-page { padding: 56px 0; }
+.legal-hero { padding: 56px 0 26px; }
+.legal-card{
+  background: rgba(17,24,39,.7);
+  border: 1px solid rgba(255,255,255,.06);
+  padding: 22px;
+  border-radius: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
