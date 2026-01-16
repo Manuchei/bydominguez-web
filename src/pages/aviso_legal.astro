@@ -1,43 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title = "Aviso legal · byDominguez", description = "" } = Astro.props;
 ---
 
-<BaseLayout
-  title="Aviso legal · byDominguez"
-  description="Información básica del titular del sitio y condiciones de uso"
->
-  <main class="wrap">
-    <section class="hero">
-      <h1>Aviso legal</h1>
-      <p class="sub">
-        Información básica del titular del sitio y condiciones de uso.
-      </p>
-    </section>
+<BaseLayout title={title} description={description}>
+  <Header />
 
-    <section class="card">
-      <h2>Titular del sitio</h2>
-      <p><strong>Responsable:</strong> Manuel Domínguez (byDominguez) · Vigo (España)</p>
-      <p>
-        <strong>Contacto:</strong>
-        <a href="mailto:contacto@bydominguez.com">contacto@bydominguez.com</a>
-        · <a href="tel:+34659127518">+34 659 127 518</a>
-      </p>
-
-      <h2>Uso del sitio</h2>
-      <p>
-        El acceso a <strong>bydominguez.com</strong> implica la aceptación de este
-        aviso legal.
-      </p>
-
-      <h2>Responsabilidad</h2>
-      <p>
-        Se realizan esfuerzos razonables para mantener la web actualizada y segura.
-      </p>
-
-      <h2>Propiedad intelectual</h2>
-      <p>
-        Los textos, logotipos, diseños y código están protegidos por la legislación vigente.
-      </p>
-    </section>
+  <main class="page">
+    <div class="wrap">
+      <slot />
+    </div>
   </main>
+
+  <Footer />
 </BaseLayout>
