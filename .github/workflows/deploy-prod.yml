@@ -31,7 +31,7 @@ jobs:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          port: ${{ secrets.FTP_PORT }}
+          port: 22
           source: "dist/*"
           target: ${{ secrets.FTP_TARGET }}
           strip_components: 1
